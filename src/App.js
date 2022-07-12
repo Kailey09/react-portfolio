@@ -4,6 +4,7 @@ import Aboutme from './pages/aboutMe';
 import Projects from './pages/projects';
 import Resume from './pages/resume';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/Resume" element={<Resume />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
