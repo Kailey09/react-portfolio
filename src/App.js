@@ -1,9 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Aboutme from './pages/aboutMe';
+import Projects from './pages/projects';
+import Resume from './pages/resume';
+
 
 function App() {
   return (
     <div className="App">
-      
+      <Router>
+        <Routes>
+          <Route path="/aboutme" element={<Aboutme />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/Resume" element={<Resume />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
